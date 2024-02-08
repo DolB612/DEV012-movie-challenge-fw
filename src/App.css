@@ -1,0 +1,13 @@
+.title{
+  font-size: 3rem;
+  margin: 40px;
+
+}
+
+.title span {
+  color: #F3B95F; /* Cambia el color a #F3B95F para "Film" */
+}
+
+.title::after {
+  color: white; /* Cambia el color a blanco para "ópolis" */
+}

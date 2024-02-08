@@ -1,0 +1,23 @@
+.conteiner {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    padding: 40PX;
+    justify-content: center;
+    background-color: #171615;
+}
+
+.conteiner img {
+    width: 100%; 
+     
+    height: auto;
+    object-fit: cover; /* Esto asegura que la imagen cubra completamente el contenedor rectangular */
+    /* border-radius: 5px; Esto agrega esquinas redondeadas, opcional */
+}
+
+@media (max-width: 560px){
+    .conteiner{
+        grid-template-columns: 100%;
+    }
+
+}
