@@ -8,7 +8,7 @@
 
 .movieCard:hover{
     opacity: 0.5;
-    transform: translate(-30px);
+    transform: translateY(-30px);
     transition: 0.5s;
 }
 

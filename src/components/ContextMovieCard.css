@@ -1,23 +1,36 @@
-.conteiner {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 30px;
-    padding: 40PX;
+.container {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    background-color: #171615;
-}
-
-.conteiner img {
-    width: 100%; 
-     
-    height: auto;
-    object-fit: cover; /* Esto asegura que la imagen cubra completamente el contenedor rectangular */
-    /* border-radius: 5px; Esto agrega esquinas redondeadas, opcional */
-}
-
-@media (max-width: 560px){
-    .conteiner{
-        grid-template-columns: 100%;
-    }
-
-}
+    
+  }
+  
+  .movie-card {
+    width: 18%;
+    margin-bottom: 10px;
+    border-radius: 30px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background-color: #343434;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  

@@ -1,0 +1,35 @@
+.detailsContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 15px;
+    height: auto;
+    width: 80%;
+}
+
+.movieImage{
+    border-radius: 15px;
+}
+
+.title{
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.movieDetails{
+    font-size: 1.2rem;
+}
+
+.genero,
+.descripcion {
+    margin-top: 10px;
+    text-align: center;
+}
