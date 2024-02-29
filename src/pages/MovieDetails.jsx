@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { get } from "../data/httpClient";
@@ -33,16 +34,16 @@ export function MovieDetails() {
         </p>
 
         <p>
-          <strong>Total de votos: </strong>
+          <strong>Total de votos : </strong>
           {totalDeVotos}
         </p>
 
-        <p className="title">
-            <strong>Titulo: </strong>{movie.title}
+        <p className="title-cardIn">
+            <strong></strong>{movie.title}
         </p>
 
         <p>
-          <strong>Lanzamiento: </strong>
+          <strong>Año de lanzamiento: </strong>
           {añoDeLanzamiento}
         </p>
 
@@ -51,10 +52,16 @@ export function MovieDetails() {
             {generos.name}
         </p>
 
-        <p>
+        <p className="description">
             <strong>Descripción: </strong>
             {movie.overview}
         </p>
+
+        {/* Botón de regresar */}
+      <Link to="/">
+        <button className="botonVolver">Regresar</button>
+      </Link>  
+
         
     </div>
   </div>);

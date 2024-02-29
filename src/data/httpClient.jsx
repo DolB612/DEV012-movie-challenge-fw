@@ -8,3 +8,21 @@ export function get(path) {
     },
   }).then((result) => result.json());
 }
+
+export function getGenres() {
+  return get("/genre/movie/list").then((data) => data.genres);
+}
+
+export function getMoviesWithFilter(page = 1, genreId, sortBy) {
+  let url = `/discover/movie?page=${page}`;
+
+  if (genreId) {
+    url += `&with_genres=${genreId}`;
+  }
+
+  if (sortBy) {
+    url += `&sort_by=${sortBy}`;
+  }
+
+  return get(url);
+}

@@ -1,35 +1,54 @@
-.detailsContainer{
+.detailsContainer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
 }
 
-.col{
+.col {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
     max-width: 400px;
     margin: 15px;
-    height: auto;
     width: 80%;
 }
 
-.movieImage{
+.movieImage {
     border-radius: 15px;
+    width: 100%;
 }
 
-.title{
-    margin-top: 0;
+.title-cardIn {
+    margin-top: 60px;
     font-size: 1.8rem;
+    color: #F3B95F;
 }
 
-.movieDetails{
+.movieDetails {
     font-size: 1.2rem;
 }
 
-.genero,
-.descripcion {
-    margin-top: 10px;
-    text-align: center;
+.genero {
+    margin-top: 25px;
+    text-align: left; /* Alinea el género y la descripción a la izquierda */
+}
+
+
+.description {
+    margin-top: 15px;
+    text-align: left; /* Alinea el género y la descripción a la izquierda */
+}
+
+.botonVolver {
+    background-color: #343434;
+    color: #fff;
+    border: none;
+    padding: 10px 45px;
+    margin-top: 90px; /* Ajusta el margen superior según sea necesario */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botonVolver:hover {
+    background-color: #F3B95F;
 }

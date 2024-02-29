@@ -1,6 +1,10 @@
 .title{
-  font-size: 3rem;
-  margin: 40px;
+  font-size: 2rem;
+  margin: 30px 0;
+  position: relative;
+  left: 100px; /* Ajusta la posición a la izquierda */
+  top: 10px; /* Ajusta la posición hacia abajo */
+
 
 }
 

@@ -1,3 +1,47 @@
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.filter-label {
+  font-weight: bold;
+  margin-right: 30px;
+  color: #F3B95F;
+  position: relative;
+  bottom: 30px;
+}
+
+.filter-dropdown {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 40px;
+  background-color: #000000;
+  color: white;
+  position: relative;
+  bottom: 30px;
+
+}
+
+/* Estilos generales para el elemento select */
+.filter-dropdown {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px; /* Ajusta el ancho según sea necesario */
+}
+
+/* Estilos para el option seleccionado */
+.filter-dropdown option:checked {
+  background-color: #F3B95F; /* Color de fondo cuando seleccionado */
+  color: #fff; /* Color del texto cuando seleccionado */
+  font-weight: bold; /* Otras propiedades de fuente según sea necesario */
+}
+
 .container {
     list-style: none;
     padding: 0;
@@ -11,6 +55,7 @@
     width: 18%;
     margin-bottom: 10px;
     border-radius: 30px;
+    
   }
   
   .pagination {
@@ -27,6 +72,7 @@
     padding: 10px 15px;
     margin: 0 5px;
     cursor: pointer;
+    border-radius: 5px;
   }
   
   .pagination button:disabled {
@@ -34,3 +80,5 @@
     cursor: not-allowed;
   }
   
+  .pagination button:hover {
+    background-color: #F3B95F;
